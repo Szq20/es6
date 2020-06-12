@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        for (let i = 0; i < 10; i++) {
+
+
+        }
+        for (var i = 0; i < 10; i++) {
+            setTimeout(function() {
+                console.log(i);
+
+            }, 0)
+
+        }
+
+        function avearge(...arg) {
+            arg.sort(function(a, b) {
+                return a - b;
+            })
+            arg.pop();
+            arg.shift();
+            return computdeScore.apply(this, arg)
+        }
+
+        function computdeScore(...arg) {
+            let sum = 0;
+            arg.forEach(function(ele) {
+                sum += ele;
+            })
+            return sum / arg.length
+        }
+        avearge(1, 2, 4, 46, 74, 23)
+    </script>
+</body>
+
+</html>
